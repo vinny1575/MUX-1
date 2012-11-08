@@ -29,6 +29,7 @@
 		97B955D71642EB3B009E1A43 /* hair.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B955D41642EB3B009E1A43 /* hair.png */; };
 		97B955D81642EB3B009E1A43 /* lips.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B955D51642EB3B009E1A43 /* lips.png */; };
 		97B955D91642EB3B009E1A43 /* eye.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B955D61642EB3B009E1A43 /* eye.png */; };
+		97F7D8D2164C6DF90021C63F /* Funny-Face_Glasses.png in Resources */ = {isa = PBXBuildFile; fileRef = 97F7D8D1164C6DF90021C63F /* Funny-Face_Glasses.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 		97B955D41642EB3B009E1A43 /* hair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hair.png; sourceTree = "<group>"; };
 		97B955D51642EB3B009E1A43 /* lips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lips.png; sourceTree = "<group>"; };
 		97B955D61642EB3B009E1A43 /* eye.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = eye.png; sourceTree = "<group>"; };
+		97F7D8D1164C6DF90021C63F /* Funny-Face_Glasses.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Funny-Face_Glasses.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				97B955D41642EB3B009E1A43 /* hair.png */,
 				97B955D51642EB3B009E1A43 /* lips.png */,
 				97B955D61642EB3B009E1A43 /* eye.png */,
+				97F7D8D1164C6DF90021C63F /* Funny-Face_Glasses.png */,
 				973F8DE3148055C1008319B1 /* Supporting Files */,
 			);
 			path = RawCamera;
@@ -259,6 +262,7 @@
 				97B955D71642EB3B009E1A43 /* hair.png in Resources */,
 				97B955D81642EB3B009E1A43 /* lips.png in Resources */,
 				97B955D91642EB3B009E1A43 /* eye.png in Resources */,
+				97F7D8D2164C6DF90021C63F /* Funny-Face_Glasses.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
