@@ -73,21 +73,59 @@
             </objects>
             <point key="canvasLocation" x="624" y="-182"/>
         </scene>
-        <!--View Controller - Customize-->
+        <!--PickerVC View Controller - Customize-->
         <scene sceneID="OGY-Sw-hmt">
             <objects>
-                <viewController id="fse-4g-WKK" sceneMemberID="viewController">
+                <viewController id="fse-4g-WKK" customClass="PickerVCViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ct0-E7-us3">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="This View will be used to customize the face in a later version" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g7n-BJ-tpS">
-                                <rect key="frame" x="24" y="234" width="273" height="79"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sQP-Ro-PH6">
+                                <rect key="frame" x="64" y="104" width="0.0" height="0.0"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="aG9-yz-8bt">
+                                <rect key="frame" x="126" y="94" width="69" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="L0o-oh-DeV">
+                                <rect key="frame" x="98" y="277" width="125" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yZf-y0-9BL">
+                                <rect key="frame" x="126" y="226" width="69" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Mouth">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mouthBtnPush:" destination="fse-4g-WKK" eventType="touchUpInside" id="zL4-3P-iZd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8pw-Kr-S9o">
+                                <rect key="frame" x="135" y="43" width="51" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Eye">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="eyeBtnPush:" destination="fse-4g-WKK" eventType="touchUpInside" id="egJ-5i-qRr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -108,6 +146,10 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="eyeImgView" destination="aG9-yz-8bt" id="BbC-tb-vQ5"/>
+                        <outlet property="mouthImgView" destination="L0o-oh-DeV" id="92T-uX-LoY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7a-iW-Vtm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,6 +184,15 @@
         <image name="Funny-Face_Glasses.png" width="30" height="23"/>
     </resources>
     <classes>
+        <class className="PickerVCViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PickerVCViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="eyeBtnPush:"/>
+                <relationship kind="action" name="mouthBtnPush:"/>
+                <relationship kind="outlet" name="eyeImgView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="mouthImgView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="videoViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/videoViewController.h"/>
             <relationships>

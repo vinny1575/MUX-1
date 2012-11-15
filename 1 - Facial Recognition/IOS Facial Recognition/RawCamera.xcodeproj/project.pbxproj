@@ -25,6 +25,8 @@
 		973F8E6214817A64008319B1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973F8E6114817A64008319B1 /* CoreGraphics.framework */; };
 		973F8E6514817AAA008319B1 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973F8E6414817AAA008319B1 /* CoreMedia.framework */; };
 		973F8E6714817AB0008319B1 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973F8E6614817AB0008319B1 /* CoreVideo.framework */; };
+		978D82F91655AC5F009A3600 /* PickerVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 978D82F81655AC5F009A3600 /* PickerVCViewController.m */; };
+		978D82FD1655AD1E009A3600 /* DataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 978D82FC1655AD1E009A3600 /* DataService.m */; };
 		97B955C91642CF61009E1A43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B955C81642CF61009E1A43 /* Default-568h@2x.png */; };
 		97B955D71642EB3B009E1A43 /* hair.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B955D41642EB3B009E1A43 /* hair.png */; };
 		97B955D81642EB3B009E1A43 /* lips.png in Resources */ = {isa = PBXBuildFile; fileRef = 97B955D51642EB3B009E1A43 /* lips.png */; };
@@ -67,6 +69,10 @@
 		973F8E6114817A64008319B1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		973F8E6414817AAA008319B1 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		973F8E6614817AB0008319B1 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		978D82F71655AC5F009A3600 /* PickerVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerVCViewController.h; sourceTree = "<group>"; };
+		978D82F81655AC5F009A3600 /* PickerVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerVCViewController.m; sourceTree = "<group>"; };
+		978D82FB1655AD1E009A3600 /* DataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataService.h; sourceTree = "<group>"; };
+		978D82FC1655AD1E009A3600 /* DataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataService.m; sourceTree = "<group>"; };
 		97B955C81642CF61009E1A43 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		97B955D41642EB3B009E1A43 /* hair.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hair.png; sourceTree = "<group>"; };
 		97B955D51642EB3B009E1A43 /* lips.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lips.png; sourceTree = "<group>"; };
@@ -142,11 +148,15 @@
 		973F8DE2148055C1008319B1 /* RawCamera */ = {
 			isa = PBXGroup;
 			children = (
+				978D82FB1655AD1E009A3600 /* DataService.h */,
+				978D82FC1655AD1E009A3600 /* DataService.m */,
 				973F8DEB148055C1008319B1 /* videoAppDelegate.h */,
 				973F8DEC148055C1008319B1 /* videoAppDelegate.m */,
 				973F8DEE148055C1008319B1 /* MainStoryboard.storyboard */,
 				973F8DF1148055C1008319B1 /* videoViewController.h */,
 				973F8DF2148055C1008319B1 /* videoViewController.m */,
+				978D82F71655AC5F009A3600 /* PickerVCViewController.h */,
+				978D82F81655AC5F009A3600 /* PickerVCViewController.m */,
 				97B955D41642EB3B009E1A43 /* hair.png */,
 				97B955D51642EB3B009E1A43 /* lips.png */,
 				97B955D61642EB3B009E1A43 /* eye.png */,
@@ -300,6 +310,8 @@
 				973F8DE9148055C1008319B1 /* main.m in Sources */,
 				973F8DED148055C1008319B1 /* videoAppDelegate.m in Sources */,
 				973F8DF3148055C1008319B1 /* videoViewController.m in Sources */,
+				978D82F91655AC5F009A3600 /* PickerVCViewController.m in Sources */,
+				978D82FD1655AD1E009A3600 /* DataService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

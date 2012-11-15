@@ -102,7 +102,16 @@
     }
 	
     //temporary.
-                     
+    
+    if ([DataService sharedInstance].eyeImg) {
+        rightEye = [DataService sharedInstance].eyeImg;
+        leftEye = [DataService sharedInstance].eyeImg;
+    }
+    
+    if ([DataService sharedInstance].mouthImg) {
+        mouth = [DataService sharedInstance].mouthImg;
+    }
+    
 }
 
 

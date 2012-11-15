@@ -11,6 +11,7 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <CoreMedia/CoreMedia.h>
 #import <CoreVideo/CoreVideo.h>
+#import "DataService.h"
 
 @interface videoViewController : UIViewController <AVCaptureVideoDataOutputSampleBufferDelegate>{
     UIView *vidUIView;
